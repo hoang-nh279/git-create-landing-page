@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Điện Thoại</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .header-bg {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer-bg {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<div class="header-bg">
+    <h1>Cửa Hàng Điện Thoại</h1>
+    <p>Chào mừng bạn đến với thế giới mua sắm!</p>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Về chúng tôi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Nội dung chính -->
+<div class="container mt-4" id="products">
+    <h2 class="mb-4">Sản phẩm nổi bật</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Sản phẩm 1">
+                <div class="card-body">
+                    <h5 class="card-title">Iphone 16Pro Max</h5>
+                    <p class="card-text">Giá: $1200 - Hiệu năng mạnh mẽ cho game thủ.</p>
+                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSj4hkpyi4Ms-qlyDW1Ksv5oWZdPaOQc7CSOdRdxuIoxwR0KOUdP5aVz8nd2Uwofa5AYuupGeTVfUAAlTfyLVrWwvGJpwMThTMXA8l6CasmrYar2HKbKonJyQTl&usqp=CAc" class="card-img-top" alt="Sản phẩm 2">
+                <div class="card-body">
+                    <h5 class="card-title">Airpod pro 2</h5>
+                    <p class="card-text">Giá: $200 - Chất lượng âm thanh tuyệt vời.</p>
+                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXQHa5NuJOmpv7Pj86YF-u2oiwKpSwoTpHxkwl0F0k6JFh0bEX6pGNguK_pK1ZvBGcUKs1RrfUeHF5gzMM5IzbxVGW8lWZYXM70wEiHR_aSw5DL9A5rwRe44jsI2cKzbHfAA&usqp=CAc" class="card-img-top" alt="Sản phẩm 3">
+                <div class="card-body">
+                    <h5 class="card-title">MacBook Air M4</h5>
+                    <p class="card-text">Giá: $1500 - Hiệu năng tuyệt đỉnh.</p>
+                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer-bg" id="contact">
+    <div class="container">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. All rights reserved.</p>
+        <p>Liên hệ: email@example.com | Điện thoại: 090-123-4567</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdlZxGKLlVH5kV3H" crossorigin="anonymous"></script>
+</body>
+</html>
